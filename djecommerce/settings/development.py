@@ -1,7 +1,8 @@
 from .base import *
 
-DEBUG = True
-ALLOWED_HOSTS = ['127.0.0.1']
+DEBUG = False
+ALLOWED_HOSTS = ['127.0.0.1', 'rocky-forest-84009.herokuapp.com']
+#ALLOWED_HOSTS = ['127.0.0.1']
 
 INSTALLED_APPS += [
     'debug_toolbar'

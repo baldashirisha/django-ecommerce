@@ -1,7 +1,7 @@
 from .base import *
 
 DEBUG = config('DEBUG', cast=bool)
-ALLOWED_HOSTS = ['127.0.0.1', 'gmgtech.herokuapp.com']
+ALLOWED_HOSTS = ['127.0.0.1', 'rocky-forest-84009.herokuapp.com']
 #ALLOWED_HOSTS = ['127.0.0', 'www.your-website.com']
 
 AUTH_PASSWORD_VALIDATORS = [

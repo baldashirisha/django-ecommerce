@@ -7,7 +7,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(
 SECRET_KEY = config('SECRET_KEY')
 DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1', 'gmgtech.herokuapp.com']
+ALLOWED_HOSTS = ['127.0.0.1', 'rocky-forest-84009.herokuapp.com']
 
 INSTALLED_APPS = [
     'django.contrib.admin',
