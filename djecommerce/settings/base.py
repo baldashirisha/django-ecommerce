@@ -5,6 +5,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(
     os.path.dirname(os.path.abspath(__file__))))
 
 SECRET_KEY = config('SECRET_KEY')
+DEBUG = False
+
+ALLOWED_HOSTS = ['127.0.0.1', 'gmgtech.herokuapp.com']
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -26,6 +29,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
